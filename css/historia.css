@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #272525;
+} 
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Início Header */
+
+.header{
+    background-color:#2a2a48;
+    width: 100%;
+    height: 55px;
+    border-radius: 2px;
+}
+
+.header h1{
+    font-size: 29px;
+    float: left;
+    color: white;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.header ul{
+    list-style: none;
+    float: right;
+}
+
+.header h1, .header ul{
+    margin-top: 5px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.header li{
+    display: inline-block;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 6px;
+    border-radius: 5px;
+    background-color:rgb(87, 19, 75) 3px;
+    font-size: 20px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* fim header */
+
+/* Início body história */
+
+
+
+.formatacao_historia{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    
+}
+
+.titulo_historia h1{
+    background-color: rgba(158, 158, 158, 0.2);
+    border-radius: 5px;
+    color: honeydew;
+    text-align: right;
+    width: 26%;
+    float: right;
+    
+    padding-right: 5% ;
+    padding-left: 5%;
+}
+
+.texto_comeco{
+    text-align: center;
+    float: right;
+    background-color: rgba(158, 158, 158, 0.2);
+    color: rgb(242, 242, 242);
+}
+.p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.5px;
+}
+
+.texto_comeco p{
+    font-size: 20px ;
+}
+
+.texto_comeco p.zumbi{
+    display: flex;
+    justify: space-around;
+    width: 100%;
+
+}
+
+.texto_comeco  img{
+    border-radius: 3px;
+    width: 200px;
+    margin-right: 2%;
+}
+
+.texto_comeco a{
+    color: rgb(208, 205, 205);
+}
+
+.titulo_pos h1{
+    background-color: rgba(158, 158, 158, 0.2);
+    border-radius: 5px;
+    color: honeydew;
+    text-align: left;
+    width: 35%;
+    float: left;
+    padding-right: 5% ;
+    padding-left: 5%;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.texto_pos{
+    text-align: center;
+    float: left;
+    background-color: rgba(158, 158, 158, 0.2);
+    color: rgb(208, 205, 205);
+    
+}
+
+.texto_pos p{
+    font-size: 19px;
+    
+}
+
+.texto_pos p.jornal{
+    display: flex;
+    justify: space-around;
+    width: 100%;
+    
+}
+
+    
+
+.texto_pos  img{
+    border-radius: 3px;
+    height: 300px;
+}
+
+.texto_pos a{
+    color: rgb(208, 205, 205);
+}
+
+
+.grafico {
+    float: left;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+}
+
+
+/* Fim body história */

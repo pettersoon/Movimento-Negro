@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #272525;
+} 
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Início Header */
+
+.header{
+    background-color:#2a2a48;
+    width: 100%;
+    height: 55px;
+    border-radius: 2px;
+}
+
+.header h1{
+    font-size: 29px;
+    float: left;
+    color: white;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.header ul{
+    list-style: none;
+    float: right;
+}
+
+.header h1, .header ul{
+    margin-top: 5px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.header li{
+    display: inline-block;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 6px;
+    border-radius: 5px;
+    background-color:rgb(87, 19, 75) 3px;
+    font-size: 20px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* fim header */
+
+#pag-sobre {
+    background-color: whitesmoke;
+}
+
+
+.sobre {
+   margin-top: 10px;
+}
+
+.titulo1_sobre , .titulo2_sobre, .titulo3_sobre{
+    text-align: center;
+}
+
+.itens_oque, .texto_como, .texto_hoje{
+    display: flex;
+    width: 100%;
+    justify:space-around;
+}
+.titulo1_sobre h1, .titulo2_sobre h1, .titulo3_sobre h1{
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    color: honeydew;
+    
+    
+}
+.itens_oque p{
+    padding-top: 3px;
+    font-size: 19px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    color: honeydew;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    }
+.img1 {
+    width: 300px;
+    height: 215px;
+}
+
+.img2{
+    width: 250;
+    height: 200px;
+}
+
+.texto_como img{
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.texto_como p {
+    padding-top: 3px;
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    color: honeydew;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    }
+
+
+.texto_hoje p{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    color: honeydew;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    }
+
+.texto_hoje img{
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.solucao img {
+    margin-top: 30px;
+    width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.solucao h1, .quem-somos h1, .simulador-financeiro h1 {
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid rgb(150, 37, 37);
+    width: fit-content;
+}
+
+.calculadora {
+    margin: 30px;
+    width: 600px;
+    border-radius: 10px; 
+    padding: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    background-color: #2c2c2c;
+}
+
+.calculadora p {
+    color: white;
+}
+
+.calculadora h2 {
+    margin: 20px;
+    color: white;
+}
+
+.calculadora input {
+    margin-top: 5px;
+    width: 210px;
+    height: 22px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.calculadora button {    
+    cursor: pointer;
+    width: 170px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    background-color: rgba(27, 26, 26, 0.199);
+    font-size: 15px;
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.calculadora img {
+    height: 170px;
+}
+
+.div_resultados {
+    background-image: url('../img/money.jpg');
+    width: 80%;
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 7px;
+}
+
+.div_resultados #resultados {
+    color: white;
+    background-color: rgba(8, 24, 8, 0.753);
+    border-radius: 7px;
+    text-align: center;
+    width: 100%;
+    font-size: 19px;
+}
+
+
+/* Fim página Sobre */

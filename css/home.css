@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #272525;
+} 
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Início Header */
+
+.header{
+    background-color:#2a2a48;
+    width: 100%;
+    height: 55px;
+    border-radius: 2px;
+}
+
+.header h1{
+    font-size: 29px;
+    float: left;
+    color: white;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.header ul{
+    list-style: none;
+    float: right;
+}
+
+.header h1, .header ul{
+    margin-top: 5px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.header li{
+    display: inline-block;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 6px;
+    border-radius: 5px;
+    background-color:rgb(87, 19, 75) 3px;
+    font-size: 20px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Início Body Home */
+
+.apresentacao{
+    color: white; 
+}
+
+.titulo_home{
+    text-align: center;
+    color:rgb(202, 202, 202);
+    border-radius: 5px;
+    width: 27%;
+    margin-top: 20px;
+    margin-left: 10%;
+    
+}
+
+.kyan{
+    margin-right: 5%;
+    border:none;
+    border-radius: 5px;
+}
+
+
+.texto-apres{
+    text-align: center;
+    color:rgb(202, 202, 202);
+    display: flex;
+    width: 100%;
+    justify:space-around;
+    margin-right: 5%;
+}
+
+.texto-apres p {
+    font-size: 20px;
+    text-align: justify;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.apresentacao img{
+    background-size: cover ;
+    height: 600px;
+    width: 90%;
+    border-radius: 3px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.o_que_e {
+    
+   
+    height: 670px;
+    display: flex; 
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 3px;
+}
+
+
+.curiosidades {
+
+    height: 670px;
+    display: flex; 
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    border-radius: 3px;
+    
+}
+
+.o_que_e button, .curiosidades button {
+    cursor: pointer;
+    width: 270px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: solid 3px white;
+    border-radius: 5px;
+    background-color: rgba(27, 26, 26, 0.199);
+    font-size: 40px;
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Fim Body Home */

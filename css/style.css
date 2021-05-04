@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+
+
+/* Início Body Login */
+/* #pag-login {
+    background-color: whitesmoke;
+}
+
+.div_login {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 70px;
+}
+
+.login{
+    background-color: rgb(223, 217, 215);
+    width: 40%;
+    margin: auto;
+    height: 330px;
+    margin-top: 100px; 
+    border-radius: 8px;
+  }
+  
+  .login h1{
+    text-align: center;
+    padding-top: 45px;
+    font-weight: lighter;
+  }
+  
+  .login label, 
+  .login input{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .login input{
+    margin-bottom: 30px;
+    height: 35px;
+    border: solid 1px #dbd7d7;
+    border-radius: 5px;
+  }
+  
+  .login button{
+    cursor: pointer;
+    background-color: rgb(63, 161, 68);
+    padding: 5px;
+    width: 20%;
+    margin-left: 40%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    height: 40px;
+  }
+  .login a{
+    margin-left: 41%;
+    margin-top: 85px;
+    
+} */
+
+/* Fim Body Login */
+
+/* Início Body Cadastro */
+/* #pag-cadastro {
+    background-color: whitesmoke;
+}
+
+.div_cadastro {
+    width: 100%;
+    height: 1000px;
+}
+
+.cadastro{
+    background-color: rgb(223, 217, 215);
+    width: 40%;
+    margin: auto;
+    height: 880px;
+    margin-top: 100px; 
+    border-radius: 8px;
+  }
+  
+  .cadastro h1{
+    text-align: center;
+    padding-top: 45px;
+    font-weight: lighter;
+  }
+  
+  .cadastro label, 
+  .cadastro input{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  .cadastro input{
+    margin-bottom: 30px;
+    height: 35px;
+    border: solid 1px #dbd7d7;
+    border-radius: 5px;
+  }
+  
+  .cadastro button{ 
+    cursor: pointer;
+    background-color: rgb(63, 161, 68);
+    padding: 5px;
+    width: 20%;
+    margin-left: 40%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    height: 40px;
+  }
+  .cadastro a{
+      margin-left: 44%;
+      margin-top: 85px;
+  } */
+
+/* Fim Body Cadastro */
+
+/* Início página Sobre */
+
+#pag-sobre {
+    background-color: whitesmoke;
+}
+
+.sobre {
+    margin-top: 15px;
+}
+
+.titulo1_sobre , .titulo2_sobre, .titulo3_sobre{
+    text-align: center;
+}
+
+.itens_oque, .texto_como, .texto_hoje{
+    display: flex;
+    width: 100%;
+    justify:space-around;
+}
+.titulo1_sobre h1, .titulo2_sobre h1, .titulo3_sobre h1{
+    background-color: rgb(44, 44, 44);
+    border-radius: 5px;
+    color: honeydew;
+    
+    
+}
+.itens_oque p{
+    padding-top: 3px;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    color: honeydew;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    }
+.img1 {
+    width: 300px;
+    height: 215px;
+}
+
+.img2{
+    width: 250;
+    height: 200px;
+}
+
+.texto_como img{
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.texto_como p {
+    padding-top: 3px;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    color: honeydew;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    }
+
+
+.texto_hoje p{
+    padding-top: 3px;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgb(133, 133, 133);
+    color: honeydew;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    }
+
+.texto_hoje img{
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+.solucao img {
+    margin-top: 30px;
+    width: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.solucao h1, .quem-somos h1, .simulador-financeiro h1 {
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 2px solid rgb(150, 37, 37);
+    width: fit-content;
+}
+
+.calculadora {
+    margin: 30px;
+    width: 600px;
+    border-radius: 10px; 
+    padding: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;
+    background-color: #2c2c2c;
+}
+
+.calculadora p {
+    color: white;
+}
+
+.calculadora h2 {
+    margin: 20px;
+    color: white;
+}
+
+.calculadora input {
+    margin-top: 5px;
+    width: 210px;
+    height: 22px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.calculadora button {    
+    cursor: pointer;
+    width: 170px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+    background-color: rgba(27, 26, 26, 0.199);
+    font-size: 15px;
+    font-family: 'Prompt', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.calculadora img {
+    height: 170px;
+}
+
+.div_resultados {
+    background-image: url('../img/money.jpg');
+    width: 80%;
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 7px;
+}
+
+.div_resultados #resultados {
+    color: white;
+    background-color: rgba(8, 24, 8, 0.753);
+    border-radius: 7px;
+    text-align: center;
+    width: 100%;
+    font-size: 19px;
+}
+
+
+/* Fim página Sobre */
+
+/* Início body história */
+
+.fundo_historia{
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+.formatacao_historia{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    
+}
+
+.titulo_historia h1{
+    background-color: rgba(44, 44, 44,0.9);
+    border-radius: 5px;
+    color: honeydew;
+    text-align: right;
+    width: 26%;
+    float: right;
+    
+    padding-right: 5% ;
+    padding-left: 5%;
+}
+
+.texto_comeco{
+    text-align: center;
+    float: right;
+    background-color: rgba(44, 44, 44,0.8);
+    color: rgb(208, 205, 205);
+}
+.p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 0.5px;
+}
+
+.texto_comeco p{
+    font-size: 20px ;
+}
+
+.texto_comeco p.zumbi{
+    display: flex;
+    justify: space-around;
+    width: 100%;
+
+}
+
+.texto_comeco  img{
+    border-radius: 3px;
+    width: 200px;
+    margin-right: 2%;
+}
+
+.texto_comeco a{
+    color: rgb(208, 205, 205);
+}
+
+.titulo_pos h1{
+    background-color: rgba(44, 44, 44,0.9);
+    border-radius: 5px;
+    color: honeydew;
+    text-align: left;
+    width: 35%;
+    float: left;
+    padding-right: 5% ;
+    padding-left: 5%;
+    margin-top: 20px;
+}
+
+.texto_pos{
+    text-align: center;
+    float: left;
+    background-color: rgba(44, 44, 44,0.8);
+    color: rgb(208, 205, 205);
+}
+
+.texto_pos p{
+    font-size: 20px ;
+}
+
+.texto_pos p.jornal{
+    display: flex;
+    justify: space-around;
+    width: 100%;
+}
+
+    
+
+.texto_pos  img{
+    border-radius: 3px;
+    height: 300px;
+}
+
+.texto_pos a{
+    color: rgb(208, 205, 205);
+}
+
+
+.grafico {
+    float: left;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+    background-color: #e7e7e7;
+    border-radius: 8px;
+}
+
+
+/* Fim body história */
+
+/* Inicio Página Consumidor */
+
+.navegacao_consumidor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hub{
+    float: left;
+    margin: auto;
+    font-size: 25px;
+    padding: 6px;
+}
+
+#seta{
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+
+#lupa{
+    height: 35px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+#input_produtores, #input_vinhos {
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+.lista_vinhos, .lista_vinhos2{
+    border: 2px solid black;
+    float: left;
+    margin: 50px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-radius: 3px;
+}
+
+.img_vinho{
+    height:65%;
+    width:70%;
+}
+
+.lista_vinhos ul, .lista_vinhos2 ul{
+    list-style: none;
+    text-align: center;
+}
+
+.button_vinho{
+    background-color:#4CAF50 ;
+    border-radius: 19px;
+    transition-duration: 0.4s;
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.button_vinho:hover{
+    background-color: #4CAF50; /* / Green /*/
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.29), 0 17px 50px 0 rgba(0,0,0,0.29);
+}
+
+.button_vinho:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+/* Fim Página Consumidor */
+/* Estilo página de informação do vinho */
+
+.img_principal{
+    width: 246px;
+    height: 354px;
+    float: left;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+#caracteristicas{
+    float: left;
+    text-align: left;
+} 
+.especificacoes{
+    margin-right: 200px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.especificacoes_itens{
+    margin-left: 5px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+#fundo{
+    padding: 8px;
+    color: white;
+    background-color: #2c2c2c;
+    margin-top: 20px;
+    margin-right: 270px;
+    margin-left: 400px;
+    border-radius: 12px;
+}
+
+#info_principal{
+    margin-left: 220px;
+}
+
+#secao_comentarios{
+    margin-top: 200px;
+    margin-left: 220px; 
+}
+.comentario_img{
+    height: 60px;
+    width: 55px;
+    border-radius: 40px;
+    float: left;
+}
+.comentario_img_last{
+    height: 60px;
+    width: 55px;
+    border-radius: 40px;
+}
+.comentario_foto{
+    height: 100px;
+    width: 95px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+}
+.comentario_texto{
+    text-align: left;
+    width: 850px;
+    margin-left: 115px;
+}
+
+/* Fim estilo página de informação do vinho */
