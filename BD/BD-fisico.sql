@@ -14,7 +14,7 @@ idComentario int primary key auto_increment,
 descricao varchar (300),
 fkUsuario int references usuario(email))auto_increment = 1;
 
-create table segestao(
+create table sugestao(
 idSugestao int primary key auto_increment,
 fkUsuario int references usuario(email),
 descricao varchar (300))auto_increment = 1;
