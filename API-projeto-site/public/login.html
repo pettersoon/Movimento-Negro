@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto IoT - Sobre</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato-e-login.css">
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 
-<body>
+<body style="background-image: url(./imgs/movimento-negro-mão-hj.jpg);">
     <!--header inicio-->
     <div class="header">
         <div class="container">
             <h1 class="titulo"><span class="highlight">Projeto</span> IoT Revolucionário</h1>
             <div class="nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="" class="current">Login</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="login.html">Forum</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -35,7 +36,7 @@
 
                 <form id="form_login" method="post" onsubmit="return entrar()">
                     Usuário:
-                    <input type="text" class="input-padrao" name="login">
+                    <input type="text" class="input-padrao" name="email">
                     <br>
                     Senha:
                     <input type="password" class="input-padrao" name="senha">
@@ -72,10 +73,10 @@
 
                 resposta.json().then(json => {
 
-                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.login_usuario_meuapp = json.email;
                     sessionStorage.nome_usuario_meuapp = json.nome;
 
-                    window.location.href = 'tempo-real.html';
+                    window.location.href = 'forum.html';
                 });
 
             } else {
@@ -84,7 +85,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizar_aguardar(texto);
+                    
                 });
             }
         });
