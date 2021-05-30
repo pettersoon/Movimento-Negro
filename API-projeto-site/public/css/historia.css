@@ -75,47 +75,40 @@
 }
 
 .titulo_historia h1{
-    background-color: rgba(158, 158, 158, 0.2);
     border-radius: 5px;
     color: honeydew;
-    text-align: right;
-    width: 26%;
-    float: right;
-    
+    text-align: center;
     padding-right: 5% ;
     padding-left: 5%;
 }
 
 .texto_comeco{
-    text-align: center;
+   
     float: right;
     background-color: rgba(158, 158, 158, 0.2);
     color: rgb(242, 242, 242);
+    border-radius: 1.5px;
+    background-image: url("../imgs/download\ \(1\).jfif");
+    background-repeat: no-repeat, repeat;
+    background-size: cover ;
+    
+    
 }
-.p{
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    letter-spacing: 0.5px;
-}
+
 
 .texto_comeco p{
     font-size: 20px ;
-}
-
-.texto_comeco p.zumbi{
+    justify:space-around;
     display: flex;
-    justify: space-around;
-    width: 100%;
-
+    padding: 20px;
+    
 }
+
 
 .texto_comeco  img{
     border-radius: 3px;
-    width: 200px;
-    margin-right: 2%;
+    width: 30%;
+    
 }
 
 .texto_comeco a{
@@ -123,16 +116,11 @@
 }
 
 .titulo_pos h1{
-    background-color: rgba(158, 158, 158, 0.2);
     border-radius: 5px;
     color: honeydew;
-    text-align: left;
-    width: 35%;
-    float: left;
-    padding-right: 5% ;
-    padding-left: 5%;
-    margin-top: 20px;
-    padding: 2px;
+    margin-top: 300px;
+    text-align: center;
+    
 }
 
 .texto_pos{
@@ -145,22 +133,17 @@
 
 .texto_pos p{
     font-size: 19px;
-    
-}
-
-.texto_pos p.jornal{
+    justify:space-around;
     display: flex;
-    justify: space-around;
-    width: 100%;
+    text-align: justify;
+    padding: 15px;
+    
     
 }
 
     
 
-.texto_pos  img{
-    border-radius: 3px;
-    height: 300px;
-}
+
 
 .texto_pos a{
     color: rgb(208, 205, 205);
