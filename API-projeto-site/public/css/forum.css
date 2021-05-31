@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #000000ef;
     color: rgb(255, 255, 255);
+    
 }
 
 h1 {
@@ -284,4 +285,86 @@ p {
 .estrutura_body_autor h1{
     text-align: center;
 
+}
+
+/* fim autor */
+
+/* inicio graficos */
+.graph{
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+.graph2{
+    width: 100%;
+    height: 600px;
+    color: white;
+}
+
+button {
+
+    display: block;
+    float: none;
+    margin: 20px auto;
+
+    color: white;
+    background-color: rgba(0, 128, 0, 0.44);
+    border: 0;
+    padding: 10px 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    
+    margin-bottom: 40px;
+    display: block; /* Default de botão é inline-block. Com block, margin auto funciona*/
+}
+
+
+/* inicio calculadora */
+.estrutura_body_calc {
+    height: 100vh;
+    margin-left: 15%;
+    background-color: #010109;
+}
+
+.div_input{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    
+}
+
+.div_input input{
+    background-color: rgb(255, 255, 255);
+    width: 5%;
+    height: 25px;
+    padding: none;
+}
+.a_graficos{
+    
+    text-transform: uppercase;
+    color: white;  
+    font-weight: bold;
+    text-align: center;
+    margin-left: 47%;
+    border: 2px solid rgb(148, 148, 148);
+        
+        
+ 
+}
+
+.estrutura_body_calc a {
+    text-transform: uppercase;
+    color: white;  
+    font-weight: bold;
+    text-align: center;
+    margin-left: 47%;
+    border: 2px solid rgb(148, 148, 148);
+    
+    
 }

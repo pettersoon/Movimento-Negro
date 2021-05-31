@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadastro.css">
-    <title>Document</title>
+    <title>Cadastro</title>
     <link rel="icon" 
     type="image/png" 
     href="imgs/twitter-lanca-emoji-em-comemoracao-ao-dia-da-consciencia-negra-1-removebg-preview.png">
@@ -28,25 +28,25 @@
         <div class="background_cadastro">
 
             <div class="div_cadastro">
-                <form class="cadastro" id="form_cadastro" onsubmit="cadastrar()" action='javascript:void(0);'>
+                <form class="cadastro" id="form_cadastro" submit="enviar_para_o_banco()" action='javascript:void(0);'>
                     <h1>Cadastro</h1>
                     <br>
                     <label >Nome:</label>
-                    <input name="nome" type="text" placeholder="Digite seu nome">
+                    <input id="in_nome" name="nome" type="text" placeholder="Digite seu nome">
                     
                     <label >Idade:</label>
-                    <input name="idade" placeholder="Digite sua idade">
+                    <input id="in_idade" type="number" name="idade" placeholder="Digite sua idade">
                     
                     <label >Endereço:</label>
-                    <input name="endereco" type="text" placeholder="Digite o endereço">
+                    <input id="in_endereco" name="endereco" type="text" placeholder="Digite o endereço">
                     
                     <label >E-mail:</label>
-                    <input name="email" type="text" placeholder="Ex: nome@email.com">
+                    <input id="in_email" name="email" type="email" placeholder="Ex: nome@email.com" >
                     
                     <label >Senha:</label>
-                    <input name="senha" type="password" placeholder="Digite sua senha">
+                    <input id="in_senha" name="senha" type="password" placeholder="Digite sua senha">
                     
-                    <button type="submit">Cadastrar</button><br>
+                    <button onclick="cadastrar()">Cadastrar</button><br>
                     <a href="login.html">Já tem login?</a>
                 </form>
                 
@@ -62,10 +62,39 @@
 </body>
 </html>
 <script>
-    function cadastrar() {
-        
-        
 
+
+    function cadastrar() {
+        if(in_nome.value.length < 3){
+        alert("Nome invalido, informe ele completo!")
+        }   
+            else if(in_idade.value < 1){
+            alert("Idade invalida!")
+            }
+                 else if(in_endereco.value.length <= 4){
+                alert("Endereço invalido, informe ele completo!")
+                } 
+                    else if(in_email.value.indexOf('.com') == -1){
+                    alert("Email invalido!")
+                    }
+                        else if(in_senha.value.length < 4){
+                        alert("Senha invalida, minimo de 4 caracteres!")
+                            }
+                            else{
+                                alert("Usuário cadastrado com sucesso!")
+                            
+                                enviar_para_o_banco();      
+                            }
+
+            
+        
+    
+        
+      
+        
+       
+        
+    function enviar_para_o_banco(){
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -73,7 +102,7 @@
         }).then(function (response) {
             
             if (response.ok) {
-
+                
                 window.location.href='login.html';
 
             } else {
@@ -87,8 +116,8 @@
         });
 
         return false;
-    }
+     }
 
    
-
+    }
 </script>

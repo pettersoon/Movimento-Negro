@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você sabia?</title>
+    <link rel="stylesheet" href="./css/forum.css">
+    <link rel="icon" 
+    type="image/png" 
+    href="imgs/twitter-lanca-emoji-em-comemoracao-ao-dia-da-consciencia-negra-1-removebg-preview.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Movimento</span> Negro</h1>
+            <div class="usuario">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li> <a href="graficos.html">Você sabia?</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="https://app.pipefy.com/public/form/tv8vPaIe?embedded=true">Alguma Sugestão ou problema?</a></li>
+                    <li><a href="index.html" class="highlight" onclick="logoff()">LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="estrutura_body">
+        <h1>Você sabia?</h1>
+
+        
+    
+
+        
+        <div class="design_post">
+
+            <div class="graph">
+                <canvas  id="homicidio_negro">
+                </canvas>
+            </div>
+            <p>
+                "Esses números nos ajudam a traduzir em números esse enorme abismo que existe entre a população negra e não negra, e a entender um pouco melhor sobre como o racismo se manifesta e o quanto estamos completamente insensíveis por isso.
+                (G1 Notícias)
+            </p>
+            <button onclick="homicidio()">Saiba mais</button>
+        </div>   
+
+
+        <div id="design_post">
+
+                <div class="graph2">
+                    <canvas id="abordagem_policial">
+                        
+                    </canvas>
+                </div>
+                    <p>
+                        Os negros são abordados com mais frequência, recebem mais insultos e mais agressões físicas que os brancos em São Paulo. A desvantagem, revelada pela pesquisa Datafolha, não pára por aí: percentualmente, também há mais revistados negros que qualquer outro grupo étnico.
+                        Entre os da raça negra, quase metade (48%) já foi revistada alguma vez. Desses, 21% já foram ofendidos verbalmente e 14%, agredidos fisicamente por policiais.
+                    </p>    
+                    <p>
+                    Os pardos superam os negros em ofensas: 27% deles foram ofendidos verbalmente e 12% agredidos fisicamente. Ao todo, 46% já foram revistados alguma vez.
+                        A população branca é menos visada pela polícia. Entre estes, 34% já passaram por uma revista, 17% ouviram ofensas e 6% já foram agredidos, menos da metade da incidência entre negros.
+                    </p>
+                <button onclick="abordagem()">Saiba mais</button>
+        </div>
+
+
+        <div class="design_post">
+           
+            <div id="graph2">
+                <canvas id="taxa_de_faculdade">
+
+                </canvas>
+            </div>
+                <p>
+                    A "persistência" da desigualdade racial entre brancos e negros no ensino superior é um dos indicativos de que a Lei Federal de Cotas, aprovada em 2012 pelo Congresso Nacional, contém "erro de mensuração", explicou ao G1 Frei David Santos, fundador da ONG Educafro.
+                </p>
+                
+                <p>
+                    "Para passar a cota para negros tivemos que aceitar a cota para a rede pública. E, no Brasil, quem termina prioritariamente o ensino médio são os brancos. Entre os pobres, quem termina prioritariamente o ensino médio são os brancos." – Frei David Santos (Educafro)
+                </p>
+
+                <p>
+                O estudo do IBGE ressaltou a persistente "dívida educacional histórica brasileira", e destacou que, nas últimas décadas, a ampliação do acesso à educação aconteceu de forma diferente segundo os grupos raciais brasileiros, e privilegiando a população branca.
+                    (G1 Notícias)
+                </p>
+            <button onclick="faculdade()">Saiba mais</button>
+        </div>
+        <br>
+       <a class="a_graficos" href="calculadora.html">Pagina 2</a>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+
+  
+
+
+    function homicidio(){
+
+ 
+    //Gráfico de homicídios negros
+      const labels = [2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018];
+            const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Homícidio Negro ao decorrer dos anos (%)',
+                data: [32.7,32.4,33.7,34.3,36.5,35.1,36.7,36.7,38.5,37.7,40.2,60.1,75.7],
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+            };
+
+                const config = {
+                    type: 'line',
+                    data,
+                    options: { maintainAspectRatio: false, },
+                };
+
+                var myChart = new Chart(
+                    document.getElementById('homicidio_negro'),
+                    config
+                );
+
+            }
+
+            function abordagem(){
+
+                // Grafico de abordagens
+                const labels = ['Branco', 'Negro'];
+                    const data = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Quem tem mais chances de ser abordado de forma violenta pela polícia?',
+                        data: [6, 94],
+                        backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                        
+                        ],
+                        borderColor: [
+                        'rgb(255, 99, 132)',
+                        'rgb(255, 159, 64)'
+                       
+                        ],
+                        borderWidth: 1
+                    }]
+                    };
+                    const config = {
+                        type: 'bar',
+                        data: data,
+                        options: {
+                            scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                            }
+                        },
+                        };
+                    var myChart = new Chart(
+                    document.getElementById('abordagem_policial'),
+                    config
+                );
+            }
+
+            function faculdade(){
+                const labels = ['Negro', 'Branco'];
+                    const data = {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Porcentual de quem é mais provável de realizar uma faculdade',
+                        data: [12, 88],
+                        backgroundColor: [
+                        'rgba(0, 12, 32, 0.2)',
+                        'rgba(0, 55, 67, 0.2)'
+                        
+                        ],
+                        borderColor: [
+                        'rgb(0, 99, 132)',
+                        'rgb(0, 159, 64)'
+                       
+                        ],
+                        borderWidth: 1
+                    }]
+                    };
+                    const config = {
+                        type: 'bar',
+                        data: data,
+                        options: {
+                            scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                            }
+                        },
+                        };
+                    var myChart = new Chart(
+                    document.getElementById('taxa_de_faculdade'),
+                    config
+                );
+            }
+
+
+
+</script>

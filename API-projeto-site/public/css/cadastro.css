@@ -86,8 +86,16 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
-  .cadastro label, 
   .cadastro input{
+    display: block;
+    width: 90%;
+    font-size: 22px;
+    font-size: larger 30px;
+    margin-left: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 0, 0);
+  } 
+  .cadastro label{
     display: block;
     width: 90%;
     font-size: 22px;

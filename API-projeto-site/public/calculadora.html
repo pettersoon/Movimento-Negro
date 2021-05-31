@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você Sabia?</title>
+    <link rel="stylesheet" href="css/forum.css">
+    <link rel="icon" 
+    type="image/png" 
+    href="imgs/twitter-lanca-emoji-em-comemoracao-ao-dia-da-consciencia-negra-1-removebg-preview.png">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">Movimento</span> Negro</h1>
+            <div class="usuario">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li> <a href="graficos.html">Você sabia?</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="autor.html">Autor</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="https://app.pipefy.com/public/form/tv8vPaIe?embedded=true">Alguma Sugestão ou problema?</a></li>
+                    <li><a href="index.html" class="highlight" onclick="logoff()">LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="estrutura_body_calc">
+        <div class="fundo_calculadora">
+
+            
+            <div class="design_post">
+                <div class="div_input">
+                    Informe uma quantia de dias: <input type="number" id="input_dias">
+                    <br>
+                    <button onclick="cadastrar_e_exibir_dado()">Exibir dados</button>
+
+                    <div id="div_resultados">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="graficos.html">Pagina1</a>
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+    var lista_de_resultados = [];
+
+    
+    function cadastrar_e_exibir_dado() {
+        var multiplicacao = Number(input_dias.value)* 63.3;
+
+        
+        if(input_dias.value <= 0 ){
+            alert("Informe um número valido")
+        }else{
+            lista_de_resultados.push(`<b style="color: red">${multiplicacao.toFixed(1)}</b> Negros são vítimas de homicídio em ${input_dias.value} dias` );
+            mostrar_dados();
+        }
+    }
+
+        function mostrar_dados() {
+            div_resultados.innerHTML = "";
+            for(var contador = 0; contador < lista_de_resultados.length; contador++) {
+                var qtd_dias = lista_de_resultados[contador];
+                div_resultados.innerHTML += `${lista_de_resultados[contador]}!<br>
+                                              Segundo BBC News <br>`;
+            }
+        }
+    
+</script>
