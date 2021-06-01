@@ -21,7 +21,7 @@
                 <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="login.html">Forum</a></li>
+            <li><a href="login.html">Fórum</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="login.html">Login</a></li>
                 </ul>
@@ -80,6 +80,8 @@
                     sessionStorage.nome_usuario_meuapp = json.nome;
                     sessionStorage.id_usuario_meuapp = json.idUsuario;
 
+                    
+
                     window.location.href = 'forum.html';
                 });
 
@@ -90,6 +92,7 @@
                 resposta.text().then(texto => {
                     console.error(texto);
                     
+                    alert("Combinação de usuário invalida!")
                 });
             }
         });
