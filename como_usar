@@ -1,0 +1,5 @@
+1-Para utilizar o site será necessário criar um DATABASE em sua máquina, onde tenha a nomenclatura de movimento_negro.
+2-Para configura-lo acesso o item chamado config em seu computador e o configure (as demais informações então no documento).
+3-Será necessário realizar um 'npm i' para que sejam baixados as aplicações necessárias.
+4-Para início do site você utilizara o comando 'npm start' e em seu navegador buscar 'localhost:3000'.
+5-E é isso bom proveito das informações e as utilize em sua vida!
